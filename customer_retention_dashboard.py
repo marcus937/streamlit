@@ -15,7 +15,7 @@ with st.sidebar:
     end_date = st.date_input("End Date", datetime.today())
 
 params = {"from": start_date.isoformat(), "to": end_date.isoformat()}
-BASE_URL = "https://your-api-endpoint.com"  # Replace with actual endpoint
+BASE_URL = "https://yardi-gw.riseconnect.us"  # Replace with actual endpoint
 
 @st.cache_data(show_spinner=False)
 def fetch_metric(metric_id):
